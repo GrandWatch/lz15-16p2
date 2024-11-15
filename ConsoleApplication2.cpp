@@ -3,9 +3,15 @@
 
 #include <iostream>
 #include <fstream>  // для роботи з файлами
+#include <Windows.h> 
+
+
 using namespace std;
 
 int main() {
+    SetConsoleCP(1251);
+    SetConsoleOutputCP(1251);
+
     // Відкрити файл для зчитування
     ifstream inputFile("matrix.txt");
     if (!inputFile) {
